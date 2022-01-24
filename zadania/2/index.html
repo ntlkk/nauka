@@ -1,0 +1,34 @@
+<html>
+<head>
+
+</head>
+<body>
+
+<div id="wynik"></div>
+<script>
+    const wynik = document.querySelector("#wynik");
+
+    //definicja zmiennych
+    let a = 5;
+    let b = 10;
+
+    //"wstrzyknięcie" - innerHTML() - kodu HTML do div-a wynik
+    wynik.innerHTML = "wynik:" + (a + b);
+</script>
+
+<div id="wynik1"></div>
+
+<script>
+    const wynik1 = document.querySelector("#wynik1");
+
+    //definicja zmiennych
+    let c=75;
+    let d=123;
+
+    //"wstrzyknięcie" - innerHTML() - kodu HTML do div-a wynik
+    wynik1.innerHTML='<h1>'+c+'+'+d+'='+(c+d)+'</h1>';
+</script>
+
+
+</body>
+</html>

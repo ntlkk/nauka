@@ -1,0 +1,48 @@
+<html>
+<head>
+
+</head>
+<body>
+<h1>sample table</h1>
+<table>
+    <tr>
+        <td>r: 1, c 1</td>
+        <td>r: 1, c 2</td>
+        <td>r: 1, c 3</td>
+        <td>r: 1, c 4</td>
+    </tr>
+    <tr>
+        <td>r: 2, c 1</td>
+        <td>r: 2, c 2</td>
+        <td>r: 2, c 3</td>
+        <td>r: 2, c 4</td>
+    </tr>
+</table>
+<hr/>
+
+<table id="table-1"></table>
+<script>
+    function buildTR1(trContent, numCol) {
+        let tr = '<tr>';
+
+        for (let i = 0; i <= numCol; i++) {
+            tr += '<td>' + trContent + '</td>';
+        }
+
+        tr += '</tr>'
+
+        return tr;
+    }
+
+    const table1 = document.querySelector("#table-1");
+
+    let table1TrBody = '';
+
+    for (let i = 0; i <= 9; i++) {
+        table1TrBody += buildTR1(i, 5);
+    }
+
+    table1.innerHTML = table1TrBody
+</script>
+</body>
+</html>
